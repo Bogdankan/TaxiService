@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма для замовлення таксі</title>
+</head>
+<body>
+    <h1>Замовлення таксі</h1>
+
+    <form action="postorder" method="POST">
+        <label for="startAddress">Початкова адреса поїздки:</label>
+        <input type="text" id="startAddress" name="startAddress" required>
+        <br>
+
+        <label for="endAddress">Кінцева адреса поїздки:</label>
+        <input type="text" id="endAddress" name="endAddress" required>
+        <br>
+
+        <label for="carClass">Клас автомобіля-таксі:</label>
+        <select id="carClass" name="carClass">
+            <option value="Standart">Комфорт</option>
+            <option value="Comfort">Стандарт</option>
+            <option value="Business">Бізнес</option>
+        </select>
+        <br>
+
+        <input type="submit" value="Замовити таксі">
+    </form>
+</body>
+</html>
